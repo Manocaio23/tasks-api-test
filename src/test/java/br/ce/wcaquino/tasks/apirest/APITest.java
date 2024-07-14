@@ -57,7 +57,7 @@ public class APITest {
 			.post("/todo")
 		.then()
 		.statusCode(400)
-		.body("message",CoreMatchers.is("Duee date must not be in past"))
+		.body("message",CoreMatchers.is("Due date must not be in past"))
 			.log().all()
 		;
 		
