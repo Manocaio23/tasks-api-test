@@ -22,7 +22,7 @@ public class APITest {
 		
 			.get("/todo")
 		.then()
-		.statusCode(201)
+		.statusCode(200)
 			.log().all()
 		;
 		
